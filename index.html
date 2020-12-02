@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="css/self.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width" , initial-scale=1.0">
+<title>YuYi Website</title>
+<style>
+	body
+	{background-image: url(image/istockphoto-1210130646-1024x1024.jpg );}
+	</style>
+<script>
+	function bigImg(x) {
+		x.style.height = "200px";
+		x.style.width = "200px";
+	}
+
+	function normalImg(x) {
+		x.style.height = "150px";
+		x.style.width = "150px";
+	}
+
+	function openTab(evt, cityName) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("tab");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className
+					.replace(" w3-red", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " w3-red";
+	}
+
+	/* for circular progress bars */
+	window.addEventListener('DOMContentLoaded', function() {
+		const
+		circle = new CircularProgressBar('pie');
+		moveProgressBar("ProgressBar1", 60);
+		moveProgressBar("ProgressBar2", 80);
+		moveProgressBar("ProgressBar3", 90);
+		moveProgressBar("ProgressBar4", 40);
+	});
+
+	function moveProgressBar(id, percentage) {
+		var i = 0;
+		if (i == 0) {
+			i = 1;
+			var elem = document.getElementById(id);
+			var width = 1;
+			var id = setInterval(frame, 100);
+
+			function frame() {
+				if (width >= percentage) {
+					clearInterval(id);
+					i = 0;
+				} else {
+					width++;
+					elem.style.width = width + "%";
+				}
+			}
+		}
+	}
+</script>
+
+<script src="js/circularProgressBar.min.js"></script>
+</head>
+
+<body>
+	<!-- -->
+	<div class="body-div" style="width: 100%;">
+		<div class="header">
+			<nav class="img-header">
+				<a href="https://line.me/ti/p/hVWeTDM8yg"><img
+					src="image/圖片1(1).png" title="歡迎和加入我的好友哦" width="48px" height="48"></a>
+				<a href="https://www.facebook.com/profile.php?id=100040175122194"><img
+					src="image/圖片2(1).png" title="要看看我的個人主頁嗎" width="52" height="51"></a>
+				<a href="https://instagram.com/yuyi_liang77532?igshid=mtv6ozv1y26h"><img
+					src="image/圖片3(1).png" title="歡迎寫信和我交流喔" width="48.5" height="53"></a>
+				<a href="mailto:qiqqiq943@gmail.com"><img
+					src="image/澳洲留學網聯繫-FB(1).png" title="這是我的個人主頁" width="50"
+					height="54"></a>
+			</nav>
+		</div>
+
+
+		<div class="blur-img"></div>
+		<div class="circle-img">
+			<img src="image/21298.jpg" alt="Avatar" style="width: 400px"> <font
+				class="name">梁聿儀</font>
+		</div>
+
+		<div class="intro-div" style="width:100%;">
+			<div class="about-column about-left" style="background-color:#FFF0F5;">
+
+				<br> <br> <font class="intro-text"> 
+					就讀大學：桃園-中原大學<br>
+					系級：資管二甲<br>
+					<br>
+					出生日：2001年01月07日(摩羯座)<br>
+					喜歡的東西：文字和美食<br>
+					<br>
+					行動電話：0911-442-202<br>
+					電子信箱：qiqqiq943@gmail.com<br>
+				</font>
+				<font class="intro-head">
+					<p align="center">
+						In addition to survival and responsibility, there are
+						many things that can make people happy! <br>
+					</p>
+				</font> 
+			</div>
+
+			<div class="about-column about-right" style="background-color: #f1f1f6;">
+				<div class="container">
+        				<h1><font color="#808080"><b>大學生涯</b></font></h1>
+        				<div class="timeline">
+            					<ul>
+            					    <li>
+            					        <div class="content">
+            					            <h3>大一新生</h3>
+            					            <p><font size="1">剛進校園，小菜鳥一只。<br>
+												沒有修過任何的電腦相關技能，懵懵懂懂得開始學起了電腦語言和程式</font></p>
+            					        </div>
+            					        <div class="point"></div>
+            					        <div class="date">
+            					            <h4>August 2019</h4>
+            					        </div>
+            					    </li>
+            					    <li>
+            					        <div class="content">
+            					            <h3>大一老鳥</h3>
+            					            <p><font size="1">再回學校，適應節奏。<br>
+												大學要學什麼、怎麼修都隨意。學會適應自己管理自己的日子</font></p>
+            					        </div>
+            					        <div class="point"></div>
+            					        <div class="date">
+            					            <h4>February 2020</h4>
+            					        </div>
+									</li>
+									<li>
+            					        <div class="content">
+            					            <h3>大二上學期</h3>
+											<p><font size="1">迎接下屆直屬，升格當學姊。<br>
+												課程深度增加，利用時間反覆練習，學會把空閒的時間花在刀口上，不要浪費</font></p>
+										</div>
+            					        </div>
+										<div class="point" style="position:relative; top: -110px;"> </div>
+            					      <!-- <div class="date" style="position:relative; top: -110px;">
+            					            <h4>September 2020</h4>
+            					        </div> --> 
+            					    </li>
+            					    
+            					</ul>
+        				</div>
+    				</div>
+ 			</div>
+		</div>
+
+		<div class="navdiv">
+			<div id="mySidenav"
+				class="w3-sidebar w3-bar-block w3-light-grey w3-card"
+				style="height: 100%; width: 150px;">
+				<button class="w3-bar-item w3-button tablink"
+					onmouseover="openTab(event, 'AbilityTab')"
+					style="background-color: powderblue;border-radius:0% 10% 10% 0%">能力</button>
+				<br>
+				
+				<button class="w3-bar-item w3-button tablink"
+					onmouseover="openTab(event, 'InterestTab')"
+					style="background-color: #48D1CC ;border-radius:0% 10% 10% 0%">興趣</button>
+				<br>
+				
+				<button class="w3-bar-item w3-button tablink"
+					onmouseover="openTab(event, 'ExperienceTab')"
+					style="background-color: #a0a0a0;border-radius:0% 10% 10% 0%">經驗</button>
+			</div>
+			
+			<div id="AbilityTab" style="margin-left: 80px"
+				class="w3-container tab">
+				<h2 class="pag1-head">專業技能</h2>
+
+			<div class="pie-div">
+				<div>
+					<table
+						style="width: 100%; text-align: left; position: relative; top: -2%">
+						<tr>
+							<th>
+								<p>
+									<font size="5">C#</font>
+								</p>
+								<div class="pie" style="width: 10%"
+									data-pie='{ "index": 5, "size": 140, "lineargradient": ["#f0940a","#9c27b0"], "round": true, "percent": 82, "colorSlice": "#16cedb", "colorCircle": "#dbd516" }'>
+								</div>
+							</th>
+
+							<th>
+								<p>
+									<font size="5">JavaScript</font>
+								</p>
+								<div class="pie"
+									data-pie='{ "index": 6, "size": 140, "lineargradient": ["#ff0000","#2600ff"], "round": true, "percent": 88, "colorSlice": "#944489", "colorCircle":  "#a65241"}'>
+								</div>
+							</th>
+
+							<th>
+								<p>
+									<font size="5">C++</font>
+								</p>
+								<div class="pie"
+									data-pie='{ "index": 7, "size": 140, "lineargradient": ["#f0f70f","#4e8249"], "round": true, "percent": 85, "colorSlice": "#a616db", "colorCircle": "#7fdb16" }'>
+								</div>
+							</th>
+
+							<th>
+								<p>
+									<font size="5">HTML/CSS</font>
+								</p>
+								<div class="pie"
+									data-pie='{ "index": 8, "size": 140, "lineargradient": ["#8517eb","#FFA07A"], "round": true, "percent": 90, "colorSlice": "#db164b", "colorCircle": "#16cedb" }'>
+								</div>
+							</th>
+						</tr>
+					</table>
+				</div>
+
+				<div id="ProgressBarDiv" >
+					<p style="font-size: 14px; font-weight: bold;">英語能力(60%)</p><div style="background-color: black;"><div  id="ProgressBar1"></div></div>
+					<p style="font-size: 14px; font-weight: bold;">PowerPoint設計(80%)</p><div style="background-color: black;"><div  id="ProgressBar2"></div></div>
+					<p style="font-size: 14px; font-weight: bold;">平面設計(90%)</p><div style="background-color: black;"><div  id="ProgressBar3"></div></div>
+					<p style="font-size: 14px; font-weight: bold;">程式開發(40%)</p><div style="background-color: black;"><div  id="ProgressBar4"></div></div>
+				</div>
+			</div>
+		</div>
+
+			<div id="InterestTab" style="margin-left: 80px; display: none;"
+				class="w3-container tab">
+				<h2 class="pag1-head">興趣愛好</h2>
+				
+				<div class="pag1-text" style="width:100%; text-align:center">
+					<div class="interest-col">
+						<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="image/圖片2.png" width="150px" height="150px" alt="Cooking">
+						<p>烹飪</p>
+					</div>
+					
+					<div class="interest-col">
+						<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="image/圖片1244.png" width="150px" height="150px" alt="Cooking">
+						<p>製作手工藝</p>
+					</div>
+					
+					<div class="interest-col">
+						<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="image/圖片131232.png" width="150px" height="150px" alt="Cooking">
+						<p>旅遊</p>
+					</div>
+				
+					<div class="interest-col">
+						<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="image/圖片4531.png" width="150px" height="150px" alt="Cooking">
+						<p>閱讀</p>
+					</div>
+
+					<div class="interest-col">
+						<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="image/圖片1.png" width="150px" height="150px" alt="Cooking">
+						<p>欣賞音樂劇</p>
+					</div>
+
+				</div>
+				
+			</div>
+
+			
+
+			<div id="ExperienceTab" style="margin-left: 80px; display: none;"
+				class="w3-container tab">
+				<h2 class="pag1-head">經驗</h2>
+				
+				<div style="position: absolute;top:30%;left:15%;width:100%;text-align:center;">
+					<div class="interest-col">
+						<img src="image/2020512_201202.jpg" width="200px" height="200px" alt="Cooking" >
+						<div class="overlay" >書法作品</div>
+					</div>
+					
+					<div class="interest-col">
+						<img src="image/05062020swap sale_201202.jpg" width="200px" height="200px" alt="Cooking">
+						<div class="overlay">跳蚤市場</div>
+					</div>
+					
+					<div class="interest-col">
+						<img  src="image/開會照片_201202.jpg" width="200px" height="200px" alt="Cooking">
+						<div class="overlay">開會照片</div>
+					</div>
+				
+					<div class="interest-col">
+						<img  src="image/20200604導聚_201202.jpg" width="200px" height="200px" alt="Cooking">
+						<div class="overlay">期末聚餐</div>
+					</div>
+
+					<div class="interest-col">
+						<img  src="image/126406029_2815173908753710_3103518238219301569_o.jpg" width="200px" height="200px" alt="Cooking">
+						<div class="overlay">業餘打工</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="life">
+			<div class="life-head">旅行日記/成長見聞</div>
+			<table>
+				<colgroup>
+					<col span="1" style="width: 25%; height: 20%;">
+				</colgroup>
+
+				<tbody>
+					<tr>
+						<td>
+							<div class="life-img-container">
+								<img src="image/21300.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">澎湖的海水冰冰涼涼</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/IMAG0753.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">早晨佛堂前的陽光</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/IMAG4192.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">
+										警察叔叔，<br>那棵樹真的不是我弄倒的
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/IMAG5408.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">
+										你看，這個房子有---這大、<br>這---麼亮堂哦!
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="life-img-container">
+								<img src="image/21296.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">
+										法國老佛爺百貨，<br>對不起我只是進來拍照的
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/21297.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">
+										花蓮的路邊景色，<br>讓人忍不住下出拍照~
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/IMAG2145.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">黃山上雲煙繚繞的仙境</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/21295.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">能夠俯瞰大笨鐘的倫敦之眼</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="life-img-container">
+								<img src="image/IMAG6661.jpg" alt="Avatar" class="life-img">
+								<div class="life-img-middle">
+									<div class="life-img-text">
+										花蓮慶修院裡的祈福菩薩，<br>猜猜我許了什麼願~?
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/21305.jpg" alt="Avatar" class="life-img"
+									style="width: 100%">
+								<div class="life-img-middle">
+									<div class="life-img-text">英國的維多利亞女王</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/IMAG6878.jpg" alt="Avatar" class="life-img"
+									style="width: 100%">
+								<div class="life-img-middle">
+									<div class="life-img-text">
+										台東的森林秘境，<br>是個拍照的好地方哦
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="life-img-container">
+								<img src="image/IMAG5291.jpg" alt="Avatar" class="life-img"
+									style="width: 100%">
+								<div class="life-img-middle">
+									<div class="life-img-text">
+										很可惜，<br>小溪的水完全沒有分開呢
+									</div>
+								</div>
+							</div>
+						</td>
+
+					</tr>
+				</tbody>
+
+
+			</table>
+		</div>
+
+		<div class="footer">copyright &copy; 2020 Liang Yu-yi</div>
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
