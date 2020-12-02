@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html
+{
+    height: 100%;
+    margin: 0; 
+}
+
+.header
+{
+    background-color:	#B0E0E6;
+    padding: 30px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px; 
+}
+.img-header 
+{
+    float:right;
+    position: absolute;
+    left: 81%;
+    align-items: right;
+    letter-spacing: 5pt;
+    
+}
+
+.img-header :hover
+{
+  opacity: 0.7;
+
+}
+
+.blur-img
+{
+    background-image: url("../image/IMG_20190810_154006.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(4px);
+    position: relative;
+    top:2%;
+    height: 370px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle-img
+{
+    position: absolute;
+    top:224px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+
+}
+.circle-img img 
+{
+    overflow: hidden;
+    border-radius: 50%;
+    border:2px #E6E6FA solid;
+}
+.name
+{
+    color:#dddddd;
+    font-family:Microsoft JhengHei;
+    font-size: 43pt;
+    font-weight: bold; 
+    letter-spacing: 3pt;
+    text-shadow: -1px 1px 	black;
+    position: absolute;
+    top:290px;
+    left:33% ; 
+}
+
+.introduce
+{	
+	float: left;
+    background-color:#FFF0F5 ;
+    width:50%;
+    height:550px;
+    text-align: left;
+    margin: 10px 10px 0px 0px;
+    top:2%;
+}
+.intro-head
+{
+  color:	#F08080;
+  margin: 5px;
+  font-size: 20pt;
+  font-weight: bolder;
+  position: relative;
+  top:3%;
+}
+.intro-text
+{
+  font-family:Microsoft JhengHei;
+  font-weight: bold;
+  color:black;
+  font-size: 20pt;
+  position: relative;
+  top:4%;
+  left:2%;
+  letter-spacing: 2pt;
+}
+
+.about
+{
+	float: rigth;
+    background-color:#FFFAFA;
+    width:62%;
+    height:400px;
+    position: absolute;
+    top:442px;
+    left: 39%;
+    margin: 10px 10px 0px 0px;
+    line-height: 55px;
+}
+.about-head
+{
+    color:	rgb(97, 95, 95);
+    font-size: 24pt;
+    font-weight: bold;
+    position: relative;
+    top:5%;
+    left: 4%;
+}
+.about-text
+{
+    font-size: 20pt;
+    text-align: left;
+    position: relative;
+    top:7%;
+    left:2%;
+}
+
+
+
+  #mySidenav button {
+  	font-size: 20px;
+    color: white;
+  	margin: 15px 0px; 
+  	height: 80px; 
+  	width: 80px;
+  	border: none;
+  	outline:none;
+  }
+  
+  #mySidenav button:hover {
+    left: 0;
+    width: 150px;
+    border: none;
+    outline:none;
+  }
+  
+ 
+  #interest {
+      top: 60px;
+      background-color:	#48D1CC;
+  }
+    
+  #ability {
+      top:180px;
+      background-color:		powderblue;
+  }
+    
+  #experience {
+      top: 300px;
+      background-color: #a0a0a0;
+  }
+  
+  .navdiv
+  {
+      width: 100%;
+      height: 85%;
+      background-color:	#E0FFFF;
+      position: relative;
+      top: 0%;
+      left:0%;
+      margin: 0px 0px 0px 0px;
+      
+  }
+  
+  .pag1-head
+  {
+    font-size: 24pt;
+    color:rgb(97, 95, 95);
+    font-weight: bold;
+    position: absolute;
+    top:1%;
+    left:20%;
+ 
+  }
+  
+  .pag1-text
+  {
+      font-size: 18pt;
+      color: 	black;
+      position: absolute;
+      top:30%;
+      left:18%;
+  }
+  
+  .pie-div
+  {
+      position: absolute;
+      top:16%;
+      left:20%;
+      height:300px;
+      width: 80%;
+      z-index: 1;
+      margin: 10px 0px 0px 0px;
+  }
+
+.life
+{
+    background-color:		snow;
+    width:100%;
+    height:1320px;
+    position: relative;
+    top:-4%;
+    left:0%;
+    margin: 0px 0px 0px 0px;
+}
+.life-head
+{
+    font-size: 24pt;
+    color:rgb(97, 95, 95);
+    font-weight: bold;
+    position: relative;
+    top:3%;
+    left:2%;
+    margin: 40px 40px 30px 2px;
+    height: 70px;
+}
+
+.life-img p {
+    /* position the text */
+    position: relative;
+    height: 20px;
+    top: 10%;
+    left: 0px;
+    display: none;
+    width: 300px;
+    text-align: center;
+    margin: 0;
+
+    
+  }
+
+  .life-img-container {
+    position: relative;
+    width:  310px;
+    height: 100%;
+  }
+  
+  .life-img {
+    opacity: 1;
+    display: block;
+    /**/
+    width: 100%;
+    height: 400px;
+   
+    
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .life-img-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .life-img-container:hover .life-img {
+    opacity: 0.3;
+  }
+  
+  .life-img-container:hover .life-img-middle {
+    opacity: 1;
+  }
+  
+  .life-img-text {
+    background-color: #D87093;
+    color: white;
+    font-size: 15px;
+    width:230px;
+    padding: 10px 10px;
+    text-align: center;
+  }
+
+
+
+
+.footer
+{
+    background-color:#AFBB8B;
+    width: 100%;
+    padding: 15px;
+    font-size: 15pt;
+    color: black;
+    line-height: 10px;
+    text-align: center;
+    position: relative;
+    top:-2%;
+    left: 0%;
+
+}
+
+@media (max-width: 720px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .pie {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .pie svg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+#ProgressBarDiv {
+  margin: 40px 0px;
+  width: 60%;
+  background-color: #E0FFFF;
+}
+
+#ProgressBar1 {
+  width: 1%;
+  height: 20px;
+  background-color: yellow;
+}
+
+#ProgressBar2 {
+  width: 1%;
+  height: 20px;
+  background-color: orange;
+}
+
+#ProgressBar3 {
+  width: 1%;
+  height: 20px;
+  background-color: blue;
+}
+
+#ProgressBar4 {
+  width: 1%;
+  height: 20px;
+  background-color: green;
+}
+
+
+.intro-div {
+  position: relative;
+	margin: 5px 0px;
+}
+
+/* Clear floats after the columns */
+.intro-div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create two equal columns that floats next to each other */
+.about-column {
+  position: relative;
+  float: left;
+  height: 560px; /* Should be removed. Only for demonstration */
+}
+
+.about-left {
+  width: 40%;
+  left: 0%;
+}
+
+.about-right {
+  width: 60%;
+  left: 0%;
+}
+
+
+.interest-col {
+  float: left;
+  width: 16%;
+
+}
+
+/* Clear floats after the columns */
+.interest-col:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.overlay {
+  position: relative; 
+  bottom: 50px; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.interest-col:hover .overlay {
+  opacity: 1;
+}
