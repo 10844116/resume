@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>經濟課題</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">經濟加分題</h1>
+    <canvas id="canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+    <p style="text-align: right;">單位：百分比(%) / 西元年</p>
+    <div>名詞解釋：<br>
+        1.經濟成長率--通常是代指「實質總產出」或「實質國內生產毛額」的年增率。國際間多以經濟成長率作為表示一國經濟實力、人民福祉和國際地位的指標<br>
+        2.失業率--指失業人口占勞動人口的比率，計算方式為：（失業人口÷勞動人口）×100% || 失業者 ÷（失業者+就業者）*100%<br>
+        3.物價上漲率--反映與居民生活有關的產品及勞務價格統計出來的物價變動指標。亦是衡量通貨膨脹的主要指標之一(一般定義超過3％為通貨膨脹，超過5％視為嚴重)</div>
+    <div>
+        <br>補充說明：2000年網際網路(投機)泡沫、2008-2009年還全金融危機，，使台灣經濟成長遭遇挫折，連帶影響相關數據。近年來台灣經濟成長速度趨緩。
+    </div>
+
+    <p style="text-align: center;background-color: wheat">資料來源： 行政院主計總處</p>
+    <script>
+        var lineChartData = {
+            labels: ["1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"], //顯示區間名稱
+            datasets: [{
+                label: '經濟成長率', // tootip 出現的名稱
+                lineTension: 0, // 曲線的彎度，設0 表示直線
+                backgroundColor: "	#AD5A5A",
+                borderColor: "	#AD5A5A",
+                borderWidth: 5,
+                data: [6.72, 6.42, -1.26, 5.57, 4.12, 6.51, 5.42, 5.62, 6.52, 0.7, -1.57, 10.63, 3.67, 2.22, 2.48, 4.72, 1.47, 2.17, 3.31, 2.79, 2.96], // 資料
+                fill: false, // 是否填滿色彩
+            },
+            {
+                label: '失業率',
+                lineTension: 0,
+                fill: false,
+                backgroundColor: "	#A5A552",
+                borderColor: "	#A5A552",
+                borderWidth: 5,
+                data: [2.92, 2.99, 4.57, 5.17, 4.99, 4.44, 4.13, 3.91, 3.91, 4.14, 5.85, 5.21, 4.39, 4.24, 4.18, 3.96, 3.78, 3.92, 3.76, 3.71, 3.73, 3.86],
+            },
+            {
+                label: '物價上漲(消費者物價指數)年增率',
+                lineTension: 0,
+                fill: false,
+                backgroundColor: "	#5CADAD",
+                borderColor: "	#5CADAD",
+                borderWidth: 5,
+                data: [0.18,1.26,-0.01,-0.20,-0.28,1.61,2.31,0.60,1.80,3.52,-0.87,0.97,1.42,1.93,0.79,1.20,-0.30,1.39,0.62,1.35,0.56],
+            },
+
+            ]
+        };
+        function drawLineCanvas(ctx, data) {
+            window.myLine = new Chart(ctx, {  //先建立一個 chart
+                type: 'line', // 型態
+                data: data,
+                options: {
+                    responsive: true,
+                    legend: { //是否要顯示圖示
+                        display: true,
+                    },
+                    tooltips: { //是否要顯示 tooltip
+                        enabled: true
+                    },
+                    scales: {  //是否要顯示 x、y 軸
+                        xAxes: [{
+                            display: true
+                        }],
+                        yAxes: [{
+                            display: true
+                        }]
+                    },
+                }
+            });
+        };
+        window.onload = function () {
+            var ctx = document.getElementById("canvas").getContext("2d");
+            drawLineCanvas(ctx, lineChartData);
+        };
+
+
+
+    </script>
+
+</body>
+
+</html>
